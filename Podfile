@@ -8,6 +8,7 @@ target 'Tools' do
   # Pods for Tools
   pod 'SSZipArchive'
   pod 'SwiftyJSON'
+  pod 'FMDB'
 
   target 'ToolsTests' do
     inherit! :search_paths

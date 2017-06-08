@@ -246,3 +246,24 @@ class TryCodeViewController: UIViewController {
     
 }
 
+class TestStatic {
+    static let shard = TestStatic()
+    let name = String("Test")!
+
+    private init() {
+        var i = 0
+        DispatchQueue.global().async {
+            while true {
+                sleep(1)
+                i += 1
+                if i == 10 {
+                    break
+                }
+            }
+            Log.d("init Done, current T:\(Thread.current.description)")
+        }
+
+    }
+    
+}
+

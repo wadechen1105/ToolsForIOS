@@ -9,12 +9,18 @@ import UIKit
 import Foundation
 
 class NotificationViewController: UIViewController {
+    override var className: String {
+        return String(describing: NotificationViewController.self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = UIColor.white
+        //fix This is the default "parallax" behavior triggered by the pushViewController:animated: method.
+        // use the same background color with root navigation view controller
+        self.view.backgroundColor = UIColor.white
+        self.navigationItem.title = className
 
-//        let settings = UIUserNotificationSettings(types: UIUserNotificationType.alert | UIUserNotificationType.badge | UIUserNotificationType.sound, categories: nil)
+        //        let settings = UIUserNotificationSettings(types: UIUserNotificationType.alert | UIUserNotificationType.badge | UIUserNotificationType.sound, categories: nil)
     }
-
+    
 }
