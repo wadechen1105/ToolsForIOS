@@ -19,8 +19,9 @@ class DownloadViewController: ParentViewController, DownloadComplereCallback {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.frame = CGRect(x: 108, y: 8, width: 108, height: 108)
-        imageView.backgroundColor = UIColor.blue
+        imageView.frame = CGRect(x: 108, y: 8, width: 150, height: 150)
+        imageView.layer.borderWidth = 1.0
+        imageView.layer.borderColor = UIColor.brown.cgColor
         imageView.center = self.view.center
         self.view.addSubview(imageView)
         let request = URLRequest(url: URL(string: "http://www.joy.org.tw/wallpaper/Joy148-L.jpg")!)
@@ -30,7 +31,11 @@ class DownloadViewController: ParentViewController, DownloadComplereCallback {
     func onFinish(_ fileURL: URL) {
         DispatchQueue.main.async {
             Log.d("url : \(fileURL)")
-            self.imageView.image = UIImage(contentsOfFile: fileURL.path)
+            UIView.transition(with: self.imageView,
+                              duration: 0.3,
+                              options: UIViewAnimationOptions.transitionCrossDissolve,
+                              animations: {self.imageView.image = UIImage(contentsOfFile: fileURL.path)},
+                              completion: nil)
         }
     }
 }
