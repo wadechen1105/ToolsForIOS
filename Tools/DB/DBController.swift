@@ -1,20 +1,13 @@
 import Foundation
 import FMDB
 
-class DBController: UIViewController {
+class DBController: ParentViewController {
     override var className: String {
         return String(describing: DBController.self)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //fix This is the default "parallax" behavior triggered by the pushViewController:animated: method.
-        // use the same background color with root navigation view controller
-        self.view.backgroundColor = UIColor.white
-        self.navigationItem.title = className
-
-        //        let settings = UIUserNotificationSettings(types: UIUserNotificationType.alert | UIUserNotificationType.badge | UIUserNotificationType.sound, categories: nil)
-
         let db = createDB("company.db")
         createTable(db, "CREATE TABLE IF NOT EXISTS t_employee" +
             "(number integer PRIMARY KEY AUTOINCREMENT, name text NOT NULL, age integer NOT NULL)")

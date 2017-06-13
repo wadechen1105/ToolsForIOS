@@ -6,11 +6,9 @@ import AudioToolbox
 typealias Task = (_ cancel : Bool) -> Void
 typealias Block = () -> ()
 
-
-
-
 let controllerLists: [UIViewController] = [NotificationViewController(),
-                                           DBController()]
+                                           DBController(),
+                                           DownloadViewController()]
 
 public func synchronized<L: NSLocking>(lockable: L, criticalSection: () -> ()) {
     lockable.lock()
@@ -18,16 +16,24 @@ public func synchronized<L: NSLocking>(lockable: L, criticalSection: () -> ()) {
     lockable.unlock()
 }
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+class ParentViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //fix This is the default "parallax" behavior triggered by the pushViewController:animated: method.
+        // use the same background color with root navigation view controller
+        self.view.backgroundColor = UIColor.white
+        self.navigationItem.title = className
+    }
+
+}
+
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     ////////////// callback //////////////////
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
