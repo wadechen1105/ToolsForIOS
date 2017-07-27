@@ -10,9 +10,6 @@
 		027BAAA18768E6B33CF630A003798226 /* ToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B121184FC17DE63CD89809CFCD579C /* ToolsUITests.swift */; };
 		0371633229926FCE5AB17F65730ED571 /* DBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E484A066BF384ED0EB7CD23B8E4 /* DBController.swift */; };
 		169A9574D02B1B810E51CE69BB0163BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AE2D7C5D1BD57CBD6C34697FAA3788 /* ViewController.swift */; };
-		187F19461EEFE2A4008EB499 /* CurveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187F19451EEFE2A4008EB499 /* CurveView.xib */; };
-		187F19481EEFE4FA008EB499 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F19471EEFE4FA008EB499 /* CurveView.swift */; };
-		187F194A1EEFE7A4008EB499 /* CurveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F19491EEFE7A4008EB499 /* CurveViewController.swift */; };
 		5DBA2FFA393CC8E807A4E8F3F33F730D /* Tools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E85B189A0C2EDDC781D216F980FD747C /* Tools.xcdatamodeld */; };
 		60B9F79A465A03C0DA5E8D2897C42225 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193373BE3516ACF7B1C46E6D1C852E28 /* NotificationViewController.swift */; };
 		6E19214D60E96CB024BB76272746F31D /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3AFE531194749516C891D552DE6A3 /* DownloadViewController.swift */; };
@@ -54,9 +51,6 @@
 		0C75CF93E8C9525337E26F3FB4CA7E20 /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119E4780C17FD67825404DC0A914F243 /* Pods_ToolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E6559659F2ED7D174BCC074FD36832 /* Pods-ToolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolsTests/Pods-ToolsTests.release.xcconfig"; sourceTree = "<group>"; };
-		187F19451EEFE2A4008EB499 /* CurveView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurveView.xib; path = UI/CurveView.xib; sourceTree = "<group>"; };
-		187F19471EEFE4FA008EB499 /* CurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurveView.swift; path = UI/CurveView.swift; sourceTree = "<group>"; };
-		187F19491EEFE7A4008EB499 /* CurveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurveViewController.swift; path = UI/CurveViewController.swift; sourceTree = "<group>"; };
 		193373BE3516ACF7B1C46E6D1C852E28 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationViewController.swift; path = Notification/NotificationViewController.swift; sourceTree = "<group>"; };
 		1B84742BBC528B1A4C8360B33C576DD4 /* Pods_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AE2D7C5D1BD57CBD6C34697FAA3788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +116,6 @@
 		0CF4C48AB255D5071D3800DFA3082993 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				187F19441EEFE283008EB499 /* UI */,
 				E4708FDD7620C36C478AF5611E9BE53D /* DB */,
 				123BE633401309E986DA3EF6DED4B3CE /* Notification */,
 				3B1B7353CF28CB45562EB3AC98DAF848 /* network */,
@@ -148,16 +141,6 @@
 				193373BE3516ACF7B1C46E6D1C852E28 /* NotificationViewController.swift */,
 			);
 			name = Notification;
-			sourceTree = "<group>";
-		};
-		187F19441EEFE283008EB499 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				187F19451EEFE2A4008EB499 /* CurveView.xib */,
-				187F19471EEFE4FA008EB499 /* CurveView.swift */,
-				187F19491EEFE7A4008EB499 /* CurveViewController.swift */,
-			);
-			name = UI;
 			sourceTree = "<group>";
 		};
 		3B1B7353CF28CB45562EB3AC98DAF848 /* network */ = {
@@ -382,7 +365,6 @@
 			files = (
 				F6647A27DCD260D1ADF36D010EAACB0F /* Assets.xcassets in Resources */,
 				98CA5E45D7AC50CF5078D5FF678D2CDC /* LaunchScreen.storyboard in Resources */,
-				187F19461EEFE2A4008EB499 /* CurveView.xib in Resources */,
 				ED51F6E336DFE1C9B347D8F5C4934213 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,7 +525,6 @@
 				A1ECA0960B8E5FFC1867DFBA5522B996 /* AppDelegate.swift in Sources */,
 				0371633229926FCE5AB17F65730ED571 /* DBController.swift in Sources */,
 				6E19214D60E96CB024BB76272746F31D /* DownloadViewController.swift in Sources */,
-				187F194A1EEFE7A4008EB499 /* CurveViewController.swift in Sources */,
 				CF787AD47A6AC5C0C706B169673CE22E /* Extensioins.swift in Sources */,
 				CC6F6EF9F0492951EB20A1880033BDE3 /* HttpTask.swift in Sources */,
 				944EFDBA8EDFF8D2DA8CEA6982B4A3C4 /* Log.swift in Sources */,
@@ -551,7 +532,6 @@
 				60B9F79A465A03C0DA5E8D2897C42225 /* NotificationViewController.swift in Sources */,
 				F7D39936A4F1BD853B656A26CEE3918D /* Reachability.m in Sources */,
 				5DBA2FFA393CC8E807A4E8F3F33F730D /* Tools.xcdatamodeld in Sources */,
-				187F19481EEFE4FA008EB499 /* CurveView.swift in Sources */,
 				B4EB346C933C62AE629000C372F017BC /* TryCodeViewController.swift in Sources */,
 				9C09703089C26EA38A3C41B42DCF7972 /* Util.swift in Sources */,
 				169A9574D02B1B810E51CE69BB0163BD /* ViewController.swift in Sources */,

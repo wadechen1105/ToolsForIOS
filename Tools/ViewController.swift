@@ -8,8 +8,7 @@ typealias Block = () -> ()
 
 let controllerLists: [UIViewController] = [NotificationViewController(),
                                            DBController(),
-                                           DownloadViewController(),
-                                           CurveViewController()]
+                                           DownloadViewController()]
 
 public func synchronized<L: NSLocking>(lockable: L, criticalSection: () -> ()) {
     lockable.lock()
