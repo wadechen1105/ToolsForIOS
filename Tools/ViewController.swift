@@ -6,9 +6,11 @@ import AudioToolbox
 typealias Task = (_ cancel : Bool) -> Void
 typealias Block = () -> ()
 
-let controllerLists: [UIViewController] = [NotificationViewController(),
+let controllerLists: [UIViewController] = [/*NotificationViewController(),
                                            DBController(),
-                                           DownloadViewController()]
+                                           DownloadViewController(),
+                                           CurveViewController(),*/
+                                           BleViewController()]
 
 public func synchronized<L: NSLocking>(lockable: L, criticalSection: () -> ()) {
     lockable.lock()
@@ -60,5 +62,35 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+}
+
+//UI
+extension UIAlertController {
+    func show() {
+        present(animated: true, completion: nil)
+    }
+
+    func present(animated: Bool, completion: (() -> Void)?) {
+        if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
+            presentFromController(controller: rootVC, animated: animated, completion: completion)
+        }
+    }
+
+    private func presentFromController(controller: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        if let navVC = controller as? UINavigationController,
+            let visibleVC = navVC.visibleViewController {
+            presentFromController(controller: visibleVC, animated: animated, completion: completion)
+        } else
+            if let tabVC = controller as? UITabBarController,
+                let selectedVC = tabVC.selectedViewController {
+                presentFromController(controller: selectedVC, animated: animated, completion: completion)
+            } else {
+                controller.present(self, animated: animated, completion: completion);
+        }
+    }
+
+    func dismiss(completion: (() -> Void)? = nil) {
+        self.dismiss(animated: true, completion: completion)
+    }
 }
 

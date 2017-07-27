@@ -1,6 +1,6 @@
 import Foundation
 
-class Timer {
+class TimerHandler {
 
     let timerQueue = DispatchQueue(label: "com.acer.ios.halo.timer", attributes: [])
     func delayMainQueue(_ time: Int, task: Block?) -> Task? {
