@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4CB288DA3071B4681F3CCE2F1C45E60D'
-               BlueprintName = 'SSZipArchive'
+               BlueprintIdentifier = '2B17F0636FD0F74B419226489639955B'
+               BlueprintName = 'FMDBMigrationManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SSZipArchive.framework'>
+               BuildableName = 'FMDBMigrationManager.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

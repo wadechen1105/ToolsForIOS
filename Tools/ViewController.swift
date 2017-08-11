@@ -6,10 +6,10 @@ import AudioToolbox
 typealias Task = (_ cancel : Bool) -> Void
 typealias Block = () -> ()
 
-let controllerLists: [UIViewController] = [/*NotificationViewController(),
+let controllerLists: [UIViewController] = [NotificationViewController(),
                                            DBController(),
                                            DownloadViewController(),
-                                           CurveViewController(),*/
+                                           CurveViewController(),
                                            BleViewController()]
 
 public func synchronized<L: NSLocking>(lockable: L, criticalSection: () -> ()) {

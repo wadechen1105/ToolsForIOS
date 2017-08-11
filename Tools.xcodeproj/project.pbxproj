@@ -157,16 +157,6 @@
 			name = Notification;
 			sourceTree = "<group>";
 		};
-		E943C4AC0077492BBF98DCF5E063BF70 /* ble */ = {
-			isa = PBXGroup;
-			children = (
-				8B9F20ACBA71581E51B54DA9519214E4 /* BleManagerService.swift */,
-				5966B315E8C7032B4B03319E0F135363 /* BleViewController.swift */,
-				16C05B3F39E1E37190A8E62438BC08D7 /* PeripheralDevice.swift */,
-			);
-			name = ble;
-			sourceTree = "<group>";
-		};
 		3B1B7353CF28CB45562EB3AC98DAF848 /* network */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +210,16 @@
 				AFF32E484A066BF384ED0EB7CD23B8E4 /* DBController.swift */,
 			);
 			name = DB;
+			sourceTree = "<group>";
+		};
+		E943C4AC0077492BBF98DCF5E063BF70 /* ble */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F20ACBA71581E51B54DA9519214E4 /* BleManagerService.swift */,
+				5966B315E8C7032B4B03319E0F135363 /* BleViewController.swift */,
+				16C05B3F39E1E37190A8E62438BC08D7 /* PeripheralDevice.swift */,
+			);
+			name = ble;
 			sourceTree = "<group>";
 		};
 		EC507A2DE793DA7F941AB9CBC5EB3AB7 /* ToolsUITests */ = {
@@ -713,6 +713,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Y93GDTT74A;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/FMDBMigrationManager/Code\"";
 				INFOPLIST_FILE = Tools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -795,6 +796,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Y93GDTT74A;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/FMDBMigrationManager/Code\"";
 				INFOPLIST_FILE = Tools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

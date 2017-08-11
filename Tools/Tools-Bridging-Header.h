@@ -3,3 +3,4 @@
 //
 
 #import "Reachability.h"
+#import "FMDBMigrationManager.h"

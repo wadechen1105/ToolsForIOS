@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDBMigrationManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Tools.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1BEA7FF744C75830085C9F84217EC48C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>225090D3C749CD966774B9F5F69D3211</key>
 		<dict>
 			<key>primary</key>
@@ -47,17 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DC9D0C66D18A3B89108F67CC50D57EA</key>
+		<key>2B17F0636FD0F74B419226489639955B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>47591617D1C36638686C977D86BF36EF</key>
+		<key>4CB288DA3071B4681F3CCE2F1C45E60D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AEE219FAD4A9BA1EE4CE0E304141BFF4</key>
+		<key>771A8E8DFE3BF37EA34CEEA9DED69701</key>
 		<dict>
 			<key>primary</key>
 			<true/>
