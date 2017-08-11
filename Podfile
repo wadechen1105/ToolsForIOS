@@ -10,6 +10,8 @@ target 'Tools' do
   pod 'SwiftyJSON'
   pod 'FMDB'
   pod 'FMDBMigrationManager'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   target 'ToolsTests' do
     inherit! :search_paths
