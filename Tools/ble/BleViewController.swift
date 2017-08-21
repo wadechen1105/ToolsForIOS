@@ -10,6 +10,7 @@ import UIKit
 import CoreBluetooth
 
 class BleViewController: UITableViewController, BleStatusCallback {
+    let cellName = "ble_cell"
 
     var deivces: [CBPeripheral] = []
     var isW = false
@@ -22,7 +23,7 @@ class BleViewController: UITableViewController, BleStatusCallback {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ble_cell")
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellName)
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
 
@@ -171,7 +172,7 @@ class BleViewController: UITableViewController, BleStatusCallback {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cellIdentifier = "ble_cell"
+        let cellIdentifier = cellName
 
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.textLabel?.text = "\(deivces[indexPath.row].name!) / \(deivces[indexPath.row].identifier.uuidString)"

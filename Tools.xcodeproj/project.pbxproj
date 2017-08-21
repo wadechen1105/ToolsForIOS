@@ -11,6 +11,7 @@
 		0371633229926FCE5AB17F65730ED571 /* DBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E484A066BF384ED0EB7CD23B8E4 /* DBController.swift */; };
 		04FA4C5675D866CDF038C7BFC168E977 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B695AC4AD84AFC0F27FD2314915A8A9 /* CurveView.swift */; };
 		169A9574D02B1B810E51CE69BB0163BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AE2D7C5D1BD57CBD6C34697FAA3788 /* ViewController.swift */; };
+		1874FED71F4AA6C40060FCBD /* DeviceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874FED61F4AA6C40060FCBD /* DeviceInfoViewController.swift */; };
 		222B76E8B3768550A8A7F6275736CF64 /* CurveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538705B03373EC67E31B85E39BC58FBA /* CurveView.xib */; };
 		35B6FD4A9312CB3346CCFF5A0E5D1109 /* CurveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF79A5276F1C53DB1E8E577C30C2AC /* CurveViewController.swift */; };
 		5DBA2FFA393CC8E807A4E8F3F33F730D /* Tools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E85B189A0C2EDDC781D216F980FD747C /* Tools.xcdatamodeld */; };
@@ -59,6 +60,7 @@
 		119E4780C17FD67825404DC0A914F243 /* Pods_ToolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C05B3F39E1E37190A8E62438BC08D7 /* PeripheralDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeripheralDevice.swift; path = ble/PeripheralDevice.swift; sourceTree = "<group>"; };
 		16E6559659F2ED7D174BCC074FD36832 /* Pods-ToolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolsTests/Pods-ToolsTests.release.xcconfig"; sourceTree = "<group>"; };
+		1874FED61F4AA6C40060FCBD /* DeviceInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoViewController.swift; sourceTree = "<group>"; };
 		193373BE3516ACF7B1C46E6D1C852E28 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationViewController.swift; path = Notification/NotificationViewController.swift; sourceTree = "<group>"; };
 		1B84742BBC528B1A4C8360B33C576DD4 /* Pods_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AE2D7C5D1BD57CBD6C34697FAA3788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				E7BE2A465D55B6E5C08E21DA910F8EA4 /* TryCodeViewController.swift */,
 				E8EB4D4E8A16877C9623482B27D34892 /* Util.swift */,
 				23AE2D7C5D1BD57CBD6C34697FAA3788 /* ViewController.swift */,
+				1874FED61F4AA6C40060FCBD /* DeviceInfoViewController.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				B4EB346C933C62AE629000C372F017BC /* TryCodeViewController.swift in Sources */,
 				9C09703089C26EA38A3C41B42DCF7972 /* Util.swift in Sources */,
 				169A9574D02B1B810E51CE69BB0163BD /* ViewController.swift in Sources */,
+				1874FED71F4AA6C40060FCBD /* DeviceInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,11 +6,12 @@ import AudioToolbox
 typealias Task = (_ cancel : Bool) -> Void
 typealias Block = () -> ()
 
-let controllerLists: [UIViewController] = [NotificationViewController(),
-                                           DBController(),
-                                           DownloadViewController(),
-                                           CurveViewController(),
-                                           BleViewController()]
+let rootControllerLists: [UIViewController] = [ DeviceinfoViewController(),
+                                                NotificationViewController(),
+                                                DBController(),
+                                                DownloadViewController(),
+                                                CustomViewController(),
+                                                BleViewController()]
 
 public func synchronized<L: NSLocking>(lockable: L, criticalSection: () -> ()) {
     lockable.lock()
@@ -39,14 +40,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     ////////////// callback //////////////////
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return controllerLists.count
+        return rootControllerLists.count
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Log.d("index row :\(indexPath.row)")
         tableView.deselectRow(at: indexPath, animated: false)
         DispatchQueue.main.async {
-            self.navigationController?.pushViewController(controllerLists[indexPath.row], animated: true)
+            self.navigationController?.pushViewController(rootControllerLists[indexPath.row], animated: true)
 
         }
 
@@ -55,6 +56,46 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cellIdentifier = "cell"
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        cell.textLabel?.text = "\(rootControllerLists[indexPath.row].className)"
+        
+        return cell
+    }
+    
+}
+
+class CustomViewController: UITableViewController {
+    let cellName = "custom_ui_cell"
+
+    let controllerLists: [UIViewController] = [CurveViewController()]
+
+    override var className: String {
+        return String(describing: CustomViewController.self)
+    }
+
+    override func viewDidLoad() {
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellName)
+    }
+
+    ////////////// callback //////////////////
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return controllerLists.count
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Log.d("index row :\(indexPath.row)")
+        tableView.deselectRow(at: indexPath, animated: false)
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(self.controllerLists[indexPath.row], animated: true)
+
+        }
+
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cellIdentifier = cellName
 
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.textLabel?.text = "\(controllerLists[indexPath.row].className)"
