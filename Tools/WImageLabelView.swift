@@ -20,7 +20,6 @@ public class WImageLabelView: UIView {
     override public func awakeFromNib() {
         super.awakeFromNib()
         addTextView()
-        addImage()
     }
     
     ///
