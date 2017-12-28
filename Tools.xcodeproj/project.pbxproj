@@ -26,6 +26,7 @@
 		A1ECA0960B8E5FFC1867DFBA5522B996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98079EDFDA05858545829B56ACBFC4D0 /* AppDelegate.swift */; };
 		AAED9A6D1C6500CE47F1ED825AAB5B04 /* Pods_ToolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119E4780C17FD67825404DC0A914F243 /* Pods_ToolsTests.framework */; };
 		B4EB346C933C62AE629000C372F017BC /* TryCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2A465D55B6E5C08E21DA910F8EA4 /* TryCodeViewController.swift */; };
+		B6A28C70B8B67DDFB21499B59F0A31B4 /* WImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A8676F10C4BB36A98D83F7DB7F459C /* WImageLabelView.swift */; };
 		C0DD89E99E69DD606158D22FE302DED2 /* Pods_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B84742BBC528B1A4C8360B33C576DD4 /* Pods_Tools.framework */; };
 		CC6F6EF9F0492951EB20A1880033BDE3 /* HttpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4DCBD846B5FB3EF6DADE8074EDD7A5 /* HttpTask.swift */; };
 		CF787AD47A6AC5C0C706B169673CE22E /* Extensioins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EE6C2308FA8BFCEC68368CEBD6D566 /* Extensioins.swift */; };
@@ -77,6 +78,7 @@
 		6C5CACD792B3BFCAAE2F07F6E697A6EF /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
 		6C998CEADFE7ADCED0F5C7720662645B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7460C877E1CB8E7E4A070E83F8BBE14D /* ToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A8676F10C4BB36A98D83F7DB7F459C /* WImageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WImageLabelView.swift; sourceTree = "<group>"; };
 		8B9F20ACBA71581E51B54DA9519214E4 /* BleManagerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BleManagerService.swift; path = ble/BleManagerService.swift; sourceTree = "<group>"; };
 		96845073D204D8D3CDB11326232EFB6F /* Tools.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tools.xcdatamodel; sourceTree = "<group>"; };
 		98079EDFDA05858545829B56ACBFC4D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				0B695AC4AD84AFC0F27FD2314915A8A9 /* CurveView.swift */,
 				538705B03373EC67E31B85E39BC58FBA /* CurveView.xib */,
 				F5AF79A5276F1C53DB1E8E577C30C2AC /* CurveViewController.swift */,
+				77A8676F10C4BB36A98D83F7DB7F459C /* WImageLabelView.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				B4EB346C933C62AE629000C372F017BC /* TryCodeViewController.swift in Sources */,
 				9C09703089C26EA38A3C41B42DCF7972 /* Util.swift in Sources */,
 				169A9574D02B1B810E51CE69BB0163BD /* ViewController.swift in Sources */,
+				B6A28C70B8B67DDFB21499B59F0A31B4 /* WImageLabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
