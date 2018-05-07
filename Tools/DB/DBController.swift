@@ -3,11 +3,7 @@ import FMDB
 
 class DBController: ParentViewController {
     private var migrationManager: FMDBMigrationManager?
-
-    override var className: String {
-        return String(describing: DBController.self)
-    }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let database = createDB("company.db")

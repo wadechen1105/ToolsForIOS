@@ -12,6 +12,7 @@ target 'Tools' do
   pod 'FMDBMigrationManager'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'MXLCalendarManager'
 
   target 'ToolsTests' do
     inherit! :search_paths

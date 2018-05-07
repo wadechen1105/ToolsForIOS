@@ -13,10 +13,6 @@ class DownloadViewController: ParentViewController, DownloadComplereCallback {
 
     let imageView: UIImageView = UIImageView()
 
-    override var className: String {
-        return String(describing: DownloadViewController.self)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.frame = CGRect(x: 108, y: 8, width: 150, height: 150)

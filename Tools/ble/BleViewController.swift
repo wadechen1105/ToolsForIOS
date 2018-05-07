@@ -15,7 +15,7 @@ class BleViewController: UITableViewController, BleStatusCallback {
     var deivces: [CBPeripheral] = []
     var isW = false
 
-    override var className: String {
+    var className: String {
         return String(describing: BleViewController.self)
     }
 

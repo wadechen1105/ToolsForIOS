@@ -9,9 +9,6 @@
 import UIKit
 
 class CurveViewController: ParentViewController {
-    override var className: String {
-        return String(describing: CurveViewController.self)
-    }
 
     override func viewDidLoad() {
 

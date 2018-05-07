@@ -11,12 +11,22 @@ let rootControllerLists: [UIViewController] = [ DeviceinfoViewController(),
                                                 DBController(),
                                                 DownloadViewController(),
                                                 CustomViewController(),
-                                                BleViewController()]
+                                                BleViewController(),
+                                                QRCodeViewController(),
+                                                FileViewController() ]
 
 public func synchronized<L: NSLocking>(lockable: L, criticalSection: () -> ()) {
     lockable.lock()
     criticalSection()
     lockable.unlock()
+}
+
+extension UIViewController {
+    var titleName: String {
+        let indexDot: Int = self.description.indexDistance(of: ".")!
+        let indexＣolon: Int = self.description.indexDistance(of: ":")!
+        return "\(String(self.description[indexDot + 1..<indexＣolon]))"
+    }
 }
 
 class ParentViewController: UIViewController {
@@ -31,12 +41,12 @@ class ParentViewController: UIViewController {
         //fix This is the default "parallax" behavior triggered by the pushViewController:animated: method.
         // use the same background color with root navigation view controller
         self.view.backgroundColor = UIColor.white
-        self.navigationItem.title = className
+        self.navigationItem.title = titleName
     }
     
 }
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: ParentViewController, UITableViewDataSource, UITableViewDelegate {
     
     ////////////// callback //////////////////
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,7 +58,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.deselectRow(at: indexPath, animated: false)
         DispatchQueue.main.async {
             self.navigationController?.pushViewController(rootControllerLists[indexPath.row], animated: true)
-            
         }
         
     }
@@ -56,10 +65,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellIdentifier = "cell"
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = "\(rootControllerLists[indexPath.row].className)"
         
+        cell.textLabel?.text = rootControllerLists[indexPath.row].titleName
         return cell
     }
     
@@ -69,10 +77,6 @@ class CustomViewController: UITableViewController {
     let cellName = "custom_ui_cell"
     
     let controllerLists: [UIViewController] = [CurveViewController()]
-    
-    override var className: String {
-        return String(describing: CustomViewController.self)
-    }
     
     override func viewDidLoad() {
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellName)
@@ -98,7 +102,7 @@ class CustomViewController: UITableViewController {
         let cellIdentifier = cellName
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = "\(controllerLists[indexPath.row].className)"
+        cell.textLabel?.text = "\(controllerLists[indexPath.row].description)"
         
         return cell
     }

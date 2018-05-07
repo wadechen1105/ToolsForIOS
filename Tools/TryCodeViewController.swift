@@ -248,7 +248,7 @@ class TryCodeViewController: UIViewController {
 
 class TestStatic {
     static let shard = TestStatic()
-    let name = String("Test")!
+    let name = String("test")
 
     private init() {
         var i = 0

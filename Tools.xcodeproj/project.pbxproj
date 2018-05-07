@@ -14,6 +14,9 @@
 		222B76E8B3768550A8A7F6275736CF64 /* CurveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538705B03373EC67E31B85E39BC58FBA /* CurveView.xib */; };
 		35B6FD4A9312CB3346CCFF5A0E5D1109 /* CurveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF79A5276F1C53DB1E8E577C30C2AC /* CurveViewController.swift */; };
 		5DBA2FFA393CC8E807A4E8F3F33F730D /* Tools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E85B189A0C2EDDC781D216F980FD747C /* Tools.xcdatamodeld */; };
+		5F3B2ED7202BE42D00DA947C /* TouchIDDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B2ED6202BE42D00DA947C /* TouchIDDemo.swift */; };
+		5FE274A1208715C200F2CB95 /* FileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE274A0208715C200F2CB95 /* FileViewController.swift */; };
+		5FE274AC20886D3800F2CB95 /* myevents.ics in Resources */ = {isa = PBXBuildFile; fileRef = 5FE274AB20886D3800F2CB95 /* myevents.ics */; };
 		60B9F79A465A03C0DA5E8D2897C42225 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193373BE3516ACF7B1C46E6D1C852E28 /* NotificationViewController.swift */; };
 		60D7B0A6326F63C7A68C48A4FCBAA860 /* BleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5966B315E8C7032B4B03319E0F135363 /* BleViewController.swift */; };
 		6E19214D60E96CB024BB76272746F31D /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3AFE531194749516C891D552DE6A3 /* DownloadViewController.swift */; };
@@ -32,6 +35,7 @@
 		CF787AD47A6AC5C0C706B169673CE22E /* Extensioins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EE6C2308FA8BFCEC68368CEBD6D566 /* Extensioins.swift */; };
 		DC23A8FF02C2848632F8DEEB5D09C6F8 /* NetWorkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D675F572D837B164DA58BD6D991340 /* NetWorkHandler.swift */; };
 		E105FDA2C1AE0B6DF42DD3D9B9628664 /* BleManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F20ACBA71581E51B54DA9519214E4 /* BleManagerService.swift */; };
+		E929B2D02021BFF700117BBC /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929B2CF2021BFF700117BBC /* QRCodeViewController.swift */; };
 		ED51F6E336DFE1C9B347D8F5C4934213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220DC2D99FEF6C028BA0BBBE2A9605AA /* Main.storyboard */; };
 		F6647A27DCD260D1ADF36D010EAACB0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 985B01F27FAEC6C57AC1FFC1602174C7 /* Assets.xcassets */; };
 		F7D39936A4F1BD853B656A26CEE3918D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29A68A59DC099F3E6C8B581D956A97 /* Reachability.m */; };
@@ -72,7 +76,10 @@
 		538705B03373EC67E31B85E39BC58FBA /* CurveView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurveView.xib; path = UI/CurveView.xib; sourceTree = "<group>"; };
 		5966B315E8C7032B4B03319E0F135363 /* BleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BleViewController.swift; path = ble/BleViewController.swift; sourceTree = "<group>"; };
 		5AA92ADB61CBC2523B1F83E24AEF0C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F3B2ED6202BE42D00DA947C /* TouchIDDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDDemo.swift; sourceTree = "<group>"; };
 		5F4DCBD846B5FB3EF6DADE8074EDD7A5 /* HttpTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpTask.swift; path = network/HttpTask.swift; sourceTree = "<group>"; };
+		5FE274A0208715C200F2CB95 /* FileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileViewController.swift; path = files/FileViewController.swift; sourceTree = "<group>"; };
+		5FE274AB20886D3800F2CB95 /* myevents.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myevents.ics; path = files/myevents.ics; sourceTree = "<group>"; };
 		635BAF31C13B54D8E5DD0385B26543C7 /* ToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EE6C2308FA8BFCEC68368CEBD6D566 /* Extensioins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensioins.swift; sourceTree = "<group>"; };
 		6C5CACD792B3BFCAAE2F07F6E697A6EF /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +103,7 @@
 		E3D675F572D837B164DA58BD6D991340 /* NetWorkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWorkHandler.swift; path = network/NetWorkHandler.swift; sourceTree = "<group>"; };
 		E7BE2A465D55B6E5C08E21DA910F8EA4 /* TryCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryCodeViewController.swift; sourceTree = "<group>"; };
 		E8EB4D4E8A16877C9623482B27D34892 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		E929B2CF2021BFF700117BBC /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		E9E0A07015A705537749488ED3D545CD /* DeviceInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoViewController.swift; sourceTree = "<group>"; };
 		F29B0F8CF8F22222C72EAB34FF9E9637 /* ToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsTests.swift; sourceTree = "<group>"; };
 		F5AF79A5276F1C53DB1E8E577C30C2AC /* CurveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurveViewController.swift; path = UI/CurveViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +140,9 @@
 		0CF4C48AB255D5071D3800DFA3082993 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5FE2749F208715A100F2CB95 /* files */,
+				5F3B2ED5202BE40300DA947C /* LocalAuth */,
+				E929B2CE2021BFC700117BBC /* QRCode */,
 				E4708FDD7620C36C478AF5611E9BE53D /* DB */,
 				123BE633401309E986DA3EF6DED4B3CE /* Notification */,
 				FF056FC65D9F5A9EECD247EDCAC1F2D7 /* UI */,
@@ -199,6 +210,23 @@
 			);
 			sourceTree = "<group>";
 		};
+		5F3B2ED5202BE40300DA947C /* LocalAuth */ = {
+			isa = PBXGroup;
+			children = (
+				5F3B2ED6202BE42D00DA947C /* TouchIDDemo.swift */,
+			);
+			path = LocalAuth;
+			sourceTree = "<group>";
+		};
+		5FE2749F208715A100F2CB95 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				5FE274AB20886D3800F2CB95 /* myevents.ics */,
+				5FE274A0208715C200F2CB95 /* FileViewController.swift */,
+			);
+			name = files;
+			sourceTree = "<group>";
+		};
 		D4A0CAA092837BE0B7DD44016488D3EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +243,14 @@
 				AFF32E484A066BF384ED0EB7CD23B8E4 /* DBController.swift */,
 			);
 			name = DB;
+			sourceTree = "<group>";
+		};
+		E929B2CE2021BFC700117BBC /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				E929B2CF2021BFF700117BBC /* QRCodeViewController.swift */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		E943C4AC0077492BBF98DCF5E063BF70 /* ble */ = {
@@ -277,8 +313,6 @@
 				6DBD098D8DEC7B9BE391A49D454A2310 /* Sources */,
 				C25BF7C54E28D17BB4CBD94DD539D012 /* Frameworks */,
 				4C17C68488BBD2B8CBAD2624806AF17E /* Resources */,
-				6D56B09959A9F51F58F97EB92449C506 /* [CP] Embed Pods Frameworks */,
-				60F3E5CBF70CECCB82CCBCDC53F1352C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,8 +332,6 @@
 				CD5E9A9A18CA38ED3924C587138B20A6 /* Sources */,
 				0328DD0A657BBF3740B42F90D4705C80 /* Frameworks */,
 				2C16813FB317F73D2B036B6244EB78D4 /* Resources */,
-				1B551A00138B2715D94A15E5E2454484 /* [CP] Embed Pods Frameworks */,
-				04C5D0EBD0E2E6CF81E0506B07702EEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,7 +352,6 @@
 				5C4C8828F5DC9DADA71B91C8B4854AC2 /* Frameworks */,
 				D13B1BB1B37F21DEF9B5DF5A4E2B132A /* Resources */,
 				1B697D24A1DB7D568242FA9A1DD3A76F /* [CP] Embed Pods Frameworks */,
-				65649F48928B4F59853229F67E8FE363 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,11 +374,13 @@
 				TargetAttributes = {
 					4E03587F4F3CC05463071EC7D2A0365E = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = Y93GDTT74A;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AFD9F88527B2ACCBAD3D749B6C007767;
 					};
 					8544C1070DE6D7A1A10F890C343CC401 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = Y93GDTT74A;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AFD9F88527B2ACCBAD3D749B6C007767;
 					};
@@ -404,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6647A27DCD260D1ADF36D010EAACB0F /* Assets.xcassets in Resources */,
+				5FE274AC20886D3800F2CB95 /* myevents.ics in Resources */,
 				222B76E8B3768550A8A7F6275736CF64 /* CurveView.xib in Resources */,
 				98CA5E45D7AC50CF5078D5FF678D2CDC /* LaunchScreen.storyboard in Resources */,
 				ED51F6E336DFE1C9B347D8F5C4934213 /* Main.storyboard in Resources */,
@@ -413,45 +447,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04C5D0EBD0E2E6CF81E0506B07702EEA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolsUITests/Pods-ToolsUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B551A00138B2715D94A15E5E2454484 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolsUITests/Pods-ToolsUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1B697D24A1DB7D568242FA9A1DD3A76F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tools/Pods-Tools-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDBMigrationManager/FMDBMigrationManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MXLCalendarManager/MXLCalendarManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDBMigrationManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXLCalendarManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -464,13 +479,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToolsUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3F3DB4B9A8691111321192B497F24384 /* [CP] Check Pods Manifest.lock */ = {
@@ -479,58 +497,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToolsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		60F3E5CBF70CECCB82CCBCDC53F1352C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolsTests/Pods-ToolsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		65649F48928B4F59853229F67E8FE363 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tools/Pods-Tools-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D56B09959A9F51F58F97EB92449C506 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolsTests/Pods-ToolsTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C548D14CA8AD9A13371446DE2FFC5D54 /* [CP] Check Pods Manifest.lock */ = {
@@ -539,13 +515,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tools-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -575,12 +554,15 @@
 				CC6F6EF9F0492951EB20A1880033BDE3 /* HttpTask.swift in Sources */,
 				944EFDBA8EDFF8D2DA8CEA6982B4A3C4 /* Log.swift in Sources */,
 				DC23A8FF02C2848632F8DEEB5D09C6F8 /* NetWorkHandler.swift in Sources */,
+				E929B2D02021BFF700117BBC /* QRCodeViewController.swift in Sources */,
 				60B9F79A465A03C0DA5E8D2897C42225 /* NotificationViewController.swift in Sources */,
 				94689D9987D8C4C580F04208943EA288 /* PeripheralDevice.swift in Sources */,
 				F7D39936A4F1BD853B656A26CEE3918D /* Reachability.m in Sources */,
 				5DBA2FFA393CC8E807A4E8F3F33F730D /* Tools.xcdatamodeld in Sources */,
+				5F3B2ED7202BE42D00DA947C /* TouchIDDemo.swift in Sources */,
 				B4EB346C933C62AE629000C372F017BC /* TryCodeViewController.swift in Sources */,
 				9C09703089C26EA38A3C41B42DCF7972 /* Util.swift in Sources */,
+				5FE274A1208715C200F2CB95 /* FileViewController.swift in Sources */,
 				169A9574D02B1B810E51CE69BB0163BD /* ViewController.swift in Sources */,
 				B6A28C70B8B67DDFB21499B59F0A31B4 /* WImageLabelView.swift in Sources */,
 			);
@@ -635,6 +617,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y93GDTT74A;
 				INFOPLIST_FILE = ToolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wade.ToolsTests;
@@ -649,6 +632,8 @@
 			baseConfigurationReference = D4140519F469F7275F8AABFF77DE9395 /* Pods-ToolsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wadechen1105@gmail.com (Q8K43HSR72)";
+				DEVELOPMENT_TEAM = Y93GDTT74A;
 				INFOPLIST_FILE = ToolsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wade.ToolsUITests;
@@ -663,6 +648,8 @@
 			baseConfigurationReference = BD07B08B9FFFEF7E1D25AD792BFCFBE6 /* Pods-ToolsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wadechen1105@gmail.com (Q8K43HSR72)";
+				DEVELOPMENT_TEAM = Y93GDTT74A;
 				INFOPLIST_FILE = ToolsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wade.ToolsUITests;
@@ -693,6 +680,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wadechen1105@gmail.com (Q8K43HSR72)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -720,6 +708,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wadechen1105@gmail.com (Q8K43HSR72)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y93GDTT74A;
 				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/FMDBMigrationManager/Code\"";
 				INFOPLIST_FILE = Tools/Info.plist;
@@ -727,9 +718,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wade.Tools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tools/Tools-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -739,6 +731,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y93GDTT74A;
 				INFOPLIST_FILE = ToolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wade.ToolsTests;
@@ -769,6 +762,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wadechen1105@gmail.com (Q8K43HSR72)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -803,6 +797,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wadechen1105@gmail.com (Q8K43HSR72)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y93GDTT74A;
 				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/FMDBMigrationManager/Code\"";
 				INFOPLIST_FILE = Tools/Info.plist;
@@ -810,8 +807,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wade.Tools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tools/Tools-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

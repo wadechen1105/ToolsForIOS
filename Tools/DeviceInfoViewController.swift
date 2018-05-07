@@ -10,10 +10,6 @@ class DeviceinfoViewController: UITableViewController {
 
     private let label: [DeviceInfoLabel] = [.language]
 
-    override var className: String {
-        return String(describing: DeviceinfoViewController.self)
-    }
-
     override func viewDidLoad() {
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellName)
     }

@@ -9,8 +9,5 @@ import UIKit
 import Foundation
 
 class NotificationViewController: ParentViewController {
-    override var className: String {
-        return String(describing: NotificationViewController.self)
-    }
 
 }
