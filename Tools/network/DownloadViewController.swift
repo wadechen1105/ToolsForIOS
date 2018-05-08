@@ -21,7 +21,8 @@ class DownloadViewController: ParentViewController, DownloadComplereCallback {
         imageView.center = self.view.center
         self.view.addSubview(imageView)
         let request = URLRequest(url: URL(string: "http://www.joy.org.tw/wallpaper/Joy148-L.jpg")!)
-        DownloadTask(self).doDownload(request)
+        let session = DownloadURLSession(isBackgroundTask: true, self)
+        DownloadTask(session).doDownload(request)
     }
 
     func onFinish(_ fileURL: URL) {

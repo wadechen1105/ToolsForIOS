@@ -1,0 +1,65 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+WORKSPACE = "Tools.xcworkspace"
+SCHEME_DEV = "Tools-dev"
+METHOD_DEV = "development"
+PATH = "./fastlane/output"
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    cocoapods
+    cordova_prepare
+    build_app(workspace: WORKSPACE, scheme: SCHEME)
+    upload_to_testflight
+  end
+
+  desc "test debug"
+  lane :debug_local do
+    tests_dev
+    xcodebuild(
+      clean: true,
+      archive: false,
+      destination: "platform=iOS Simulator,name=iPhone 8,OS=11.3",
+      scheme: SCHEME_DEV,
+      workspace: WORKSPACE
+    )
+  end
+
+  private_lane :tests_dev do
+    run_tests(scheme: "ToolsDevTests")
+  end
+
+  private_lane :archive_dev do
+    gym(
+        clean: true,
+        workspace: WORKSPACE,
+        include_symbols: true,
+        export_method: METHOD_DEV,
+        scheme: SCHEME_DEV,
+        silent: true,
+        output_directory: "./fastlane/output"
+    )
+  end
+
+  desc "exec cordova prepare"
+  lane :cordova_prepare do
+    sh("cordova prepare ios")
+  end
+end
+

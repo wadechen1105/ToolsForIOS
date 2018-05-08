@@ -1,27 +1,31 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
+
+use_frameworks!
+def inherit_pods
+    # Pods for Tools
+    pod 'SSZipArchive'
+    pod 'SwiftyJSON'
+    pod 'FMDB'
+    pod 'FMDBMigrationManager'
+    pod 'Fabric'
+    pod 'Crashlytics'
+    pod 'MXLCalendarManager'
+end
 
 target 'Tools' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+    inherit_pods
+end
 
-  # Pods for Tools
-  pod 'SSZipArchive'
-  pod 'SwiftyJSON'
-  pod 'FMDB'
-  pod 'FMDBMigrationManager'
-  pod 'Fabric'
-  pod 'Crashlytics'
-  pod 'MXLCalendarManager'
+target 'Tools-dev' do
+    inherit_pods
+end
 
-  target 'ToolsTests' do
+target 'ToolsDevTests' do
+    inherit_pods
+end
+
+target 'ToolsUITests' do
     inherit! :search_paths
     # Pods for testing
-  end
-
-  target 'ToolsUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
